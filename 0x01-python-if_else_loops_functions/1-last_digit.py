@@ -6,8 +6,7 @@ if number < 0:
     last = num % 10
     last = -last
 else:
-    num = number
-    last = num % 10
+    last = number % 10
 if last > 5:
     strn = "and is greater than 5"
 elif last == 0:
