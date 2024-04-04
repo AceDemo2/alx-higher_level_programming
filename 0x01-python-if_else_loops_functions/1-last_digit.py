@@ -3,9 +3,11 @@ import random
 number = random.randint(-10000, 10000)
 if number < 0:
     num = -number
+    last = num % 10
+    last = -last
 else:
     num = number
-last = num % 10
+    last = num % 10
 if last > 5:
     strn = "and is greater than 5"
 elif last == 0:
