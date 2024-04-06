@@ -7,6 +7,6 @@ if __name__ == "__main__":
     sub = sub(a, b)
     mul = mul(a, b)
     div = div(a, b)
-    s = [add, sub, mul, div]
-    for c in s:
-        print("{} + {} = {}".format(a, b, c))
+    s = [(add, "+"), (sub, "-"), (mul, "*"), (div, "/")]
+    for i, j in s:
+        print("{} {} {} = {}".format(a, j, b, i))
