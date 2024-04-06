@@ -4,5 +4,5 @@ if __name__ == "__main__":
     lent = len(argv)
     add = 0
     for i in range(1, lent):
-        add += argv[i]
+        add += int(argv[i])
     print(add)
