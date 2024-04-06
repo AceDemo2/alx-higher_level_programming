@@ -6,6 +6,7 @@ if __name__ == "__main__":
         print("0 arguments.")
     else:
         print("{} arguments:".format(le))
-        while i < le:
+        i = 1
+        while i <= le:
             print("{} {}".format(i, argv[i]))
             i += 1
