@@ -5,8 +5,8 @@ if __name__ == "__main__":
     if le <= 0:
         print("0 arguments.")
     else:
-        print("{} arguments:".format(le))
+        print("{} arguments:".format(le - 1))
         i = 1
-        while i <= le:
+        while i < le:
             print("{}: {}".format(i, sys.argv[i]))
             i += 1
