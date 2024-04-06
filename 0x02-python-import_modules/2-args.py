@@ -2,11 +2,10 @@
 if __name__ == "__main__":
     import sys
     le = len(sys.argv)
-    if le <= 0:
-        print("0 arguments.")
-    else:
-        print("{} arguments:".format(le - 1))
-        i = 1
-        while i < le:
-            print("{}: {}".format(i, sys.argv[i]))
-            i += 1
+    pl = "s" if le >= 3 else ""
+    si = ":" if le >= 2 else "."
+    print("{} argument{}{}".format((le - 1 if le > 0 else 0), pl, si)
+    i = 1
+    while i < le:
+        print("{}: {}".format(i, sys.argv[i]))
+        i += 1
