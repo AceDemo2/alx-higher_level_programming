@@ -8,5 +8,5 @@ if __name__ == "__main__":
     mul = mul(a, b)
     div = div(a, b)
     s = [(add, "+"), (sub, "-"), (mul, "*"), (div, "/")]
-    for i, j in s:
-        print("{} {} {} = {}".format(a, j, b, i))
+    for value, op in s:
+        print("{} {} {} = {}".format(a, op, b, value))
