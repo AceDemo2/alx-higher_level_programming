@@ -3,5 +3,4 @@ def new_in_list(my_list, idx, element):
     s = my_list
     if 0 <= idx < len(s):
         s[idx] = element
-    for i in s:
-        print("{}".format(i))
+    return (s)
