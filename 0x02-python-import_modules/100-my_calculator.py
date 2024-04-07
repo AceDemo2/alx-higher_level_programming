@@ -12,7 +12,7 @@ if __name__ == "__main__":
     s = [(add, "+"), (sub, "-"), (mul, "*"), (div, "/")]
     i = 0
     j = 1
-    while s[i] != None:
+    while i < len(s):
         if op == s[i][j]:
             r = s[i][0](a,b)
             print("{} {} {} = {}".format(a, op, b, r))
