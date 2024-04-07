@@ -14,11 +14,11 @@ if __name__ == "__main__":
     j = 1
     while i < len(s):
         if op == s[i][j]:
-            r = s[i][0](a,b)
+            r = s[i][0](a, b)
             print("{} {} {} = {}".format(a, op, b, r))
             break
         else:
             i += 1
     else:
-            print("Unknown operator. Available operators: +, -, * and /")
-            exit(1)
+        print("Unknown operator. Available operators: +, -, * and /")
+        exit(1)
