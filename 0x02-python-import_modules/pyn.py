@@ -1,1 +1,1 @@
-a = "#pythoniscool"
+print("#pythoniscool")
