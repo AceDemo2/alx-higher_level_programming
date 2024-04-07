@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import sys; sys.write("#pythoniscool")
+import pyn; pyn.write(a)
