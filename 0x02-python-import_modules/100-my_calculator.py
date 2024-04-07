@@ -19,6 +19,6 @@ if __name__ == "__main__":
             break
         else:
             i += 1
-    if s[i] == None:
+    else:
             print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
