@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
+    k = []
     for i in range(len(matrix)):
-        k = list(map(lambda x: x**2, matrix[i]))
-        print(list(k), end=', ' if i != len(matrix) - 1 else '\n')
+        k[i] = list(map(lambda x: x**2, matrix[i]))
+    retrun (k)
