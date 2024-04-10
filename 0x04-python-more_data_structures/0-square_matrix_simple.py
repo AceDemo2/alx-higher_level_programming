@@ -4,3 +4,4 @@ def square_matrix_simple(matrix=[]):
     for i in range(len(matrix)):
         k[i] = list(map(lambda x: x**2, matrix[i]))
     retrun (k)
+
