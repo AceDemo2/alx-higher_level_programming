@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def s(i1, j1):
-    k = []
+    k = ()
     f = 0
     i = 0
     while i < len(i1):
