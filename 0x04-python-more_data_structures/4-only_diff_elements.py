@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 def s(i1, j1):
-    k = ()
+    k = []
     f = 0
     i = 0
     while i < len(i1):
         j = 0
-        while len(j1):
+        while j < len(j1):
             if i1[i] == j1[j]:
                 f = 1
                 break
