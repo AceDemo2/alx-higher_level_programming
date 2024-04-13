@@ -7,9 +7,9 @@ def roman_to_int(roman_string):
     for s, v in sym.items():
         if s == roman_string[i]:
             if v < p:
-                total += v
+                total -= v
             else:
-                total -= 2 * p
+                total += v
             p = v
             i += 1
         else:
