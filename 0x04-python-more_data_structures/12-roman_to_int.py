@@ -9,9 +9,8 @@ def roman_to_int(roman_string):
         v = sym.get(i, 0)
         if v == 0:
             return 0
+        total += v
         if v > p:
             total -= 2 * p
-        else:
-            total += v
         p = v
     return total
