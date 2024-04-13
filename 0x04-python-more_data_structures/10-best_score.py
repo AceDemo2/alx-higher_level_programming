@@ -1,7 +1,7 @@
 #!/usr/bin/python3i
 def best_score(a_dictionary):
     if a_dictionary:
-        k = ""
+        k = None
         l = list(a_dictionary)
         i = a_dictionary[l[0]]
         for j in a_dictionary:
