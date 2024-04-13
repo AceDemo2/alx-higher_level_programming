@@ -5,7 +5,7 @@ def roman_to_int(roman_string):
     p = 0
     for i in roman_string:
         v = sym[i]
-        if v == None:
+        if v is None:
             return 0
         if v < p:
             total -= v
