@@ -10,8 +10,8 @@ def roman_to_int(roman_string):
         if v == 0:
             return 0
         if v < p:
-            total -= v
+            total -= 2 * v
         else:
             total += v
             p = v
-    return str(total)
+    return total
