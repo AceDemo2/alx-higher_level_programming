@@ -14,4 +14,4 @@ def roman_to_int(roman_string):
         else:
             total += v
             p = v
-    return total
+    return str(total)
