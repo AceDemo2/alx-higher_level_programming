@@ -13,5 +13,5 @@ def roman_to_int(roman_string):
             total += v -  2 * p
         else:
             total += v
-            p = v
+        p = v
     return total
