@@ -10,7 +10,7 @@ def roman_to_int(roman_string):
         if v == 0:
             return 0
         if v > p:
-            total += v -  2 * p
+            total -= 2 * p
         else:
             total += v
         p = v
