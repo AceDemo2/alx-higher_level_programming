@@ -1,6 +1,6 @@
 #!/usr/bin/python3i
 def best_score(a_dictionary):
-        k = ""
+    k = ""
     if a_dictionary:
         l = list(a_dictionary)
         i = a_dictionary[l[0]]
