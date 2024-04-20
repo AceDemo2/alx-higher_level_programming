@@ -3,5 +3,6 @@
 import builtins
 
 # Filter and print exception classes
-print(dir(exception_classes))
+exception_classes = [cls for cls in dir(builtins) if cls.endswith("Error") or cls.endswith("Exception")]
+print(exception_classes)
 
