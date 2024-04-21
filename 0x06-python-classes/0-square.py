@@ -3,7 +3,7 @@
 create an empty class
 """
 class Square:
-"""
-empty class
-"""
+    """
+    empty class
+    """
     pass
