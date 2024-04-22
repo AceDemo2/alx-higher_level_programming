@@ -12,11 +12,12 @@ class Square:
         """initialize square
         Args: size (int): size of the square
         """
-        self.__size = size 
+        self.__size = size
+    
     @property
     def size(self):
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         if type(value) is not int:
