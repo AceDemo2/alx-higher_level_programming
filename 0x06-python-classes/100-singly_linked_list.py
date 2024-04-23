@@ -64,4 +64,4 @@ class SinglyLinkedList:
         while i:
             j += list(str(i.data)) + list('\n')
             i = i.next_node
-        return (j)
+        return (str(j))
