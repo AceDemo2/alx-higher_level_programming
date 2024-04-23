@@ -57,9 +57,9 @@ class SinglyLinkedList:
 
     def __str__(self):
         """Sets the print behavior of the SinglyLinkedList object."""
-        j = []
+        j = ""
         i = self.__head
         while i:
-            j.append(str(i.data))
+            j += str(i.data) + '\n'
             i = i.next_node
-        return ('\n'.join(j))
+        return (j)
