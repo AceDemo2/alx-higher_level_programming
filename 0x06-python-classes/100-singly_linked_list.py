@@ -50,7 +50,7 @@ class SinglyLinkedList:
             self.__head = new
         else:
             i = self.__head
-            while i and i.next_node.data < value:
+            while i.next_node and i.next_node.data < value:
                 i = i.next_node
             new.next_node = i.next_node
             i.next_node = new
