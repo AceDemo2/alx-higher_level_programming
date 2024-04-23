@@ -3,11 +3,12 @@
 create class
 """
 
+
 class Node:
     """define Node"""
     def __init__(self, data, next_node=None):
         """Sets the necessary attributes for the Node object.
-        
+
         Args:
             data (int): the value of the node
             next_node (Node): the next Node
@@ -36,6 +37,7 @@ class Node:
             raise TypeError('next_node must be a Node object')
         else:
             self.__next_node = value
+
 
 class SinglyLinkedList:
     """define SinglyLinkedList"""
