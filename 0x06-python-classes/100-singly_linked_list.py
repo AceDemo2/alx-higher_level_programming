@@ -3,8 +3,11 @@
 """
 create class
 """
+
+
 class Node:
     """define Node"""
+
     def __init__(self, data, next_node=None):
         """
         Initializes a Node object with the provided data and optional next node.
@@ -58,9 +61,13 @@ class Node:
         else:
             self.__next_node = value
 
+
 """create SinglyLinkedList class"""
+
+
 class SinglyLinkedList:
     """define SinglyLinkedList"""
+
     def __init__(self):
         """Initializes a SinglyLinkedList object with no nodes."""
         self.head = None
