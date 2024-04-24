@@ -30,7 +30,7 @@ class Square:
     def area(self):
         return self.__size ** 2
 
-    def __eq__(self, i):
+    def __e__(self, i):
         return self.size == i.size
 
     def __ne__(self, i):
