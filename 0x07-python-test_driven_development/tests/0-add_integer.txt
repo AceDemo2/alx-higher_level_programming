@@ -19,9 +19,9 @@
 
 # Test case: Testing for potential overflow
 >>> add_integer(2147483647, 10)
-    Traceback (most recent call last):
-        ...
-    OverflowError: cannot convert float infinity to integer
+Traceback (most recent call last):
+	...
+OverflowError: cannot convert float infinity to integer
 
 >>> add_integer(None)
 	Traceback (most recent call last):
