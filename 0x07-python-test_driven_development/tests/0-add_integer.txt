@@ -1,4 +1,4 @@
-t case: Adding positive numbers
+# Test case: Adding positive numbers
 2, 3, 5
 
 # Test case: Adding negative numbers
@@ -12,4 +12,3 @@ t case: Adding positive numbers
 
 # Test case: Testing for potential overflow
 2147483647, 10, OverflowError
-
