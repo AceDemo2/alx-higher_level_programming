@@ -1,18 +1,25 @@
-add_integer = __import__('0-add_integer').add_integer
+# Import the add_integer function from the 0-add_integer module
+>>> add_integer = __import__('0-add_integer').add_integer
 
-add_integer(2, 3)
+# Test case: Adding positive numbers
+>>> add_integer(2, 3)
 5
 
-add_integer(-2, -3)
+# Test case: Adding negative numbers
+>>> add_integer(-2, -3)
 -5
 
-add_integer(0, 0)
+# Test case: Adding zero
+>>> add_integer(0, 0)
 0
 
-add_integer(2147483647, 1)
+# Test case: Adding maximum integer value
+>>> add_integer(2147483647, 1)
 2147483648
 
-add_integer(2147483647, 10)
+# Test case: Testing for potential overflow
+>>> add_integer(2147483647, 10)
 Traceback (most recent call last):
     ...
 OverflowError: cannot convert float infinity to integer
+
