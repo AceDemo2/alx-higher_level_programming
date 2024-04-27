@@ -34,3 +34,9 @@ OverflowError: cannot convert float infinity to integer
 Traceback (most recent call last):
 	      ...
 ValueError: cannot convert float NaN to integer
+
+Passing None
+    >>> add_integer(None)
+    Traceback (most recent call last):
+	      ...
+    TypeError: a must be an integer
