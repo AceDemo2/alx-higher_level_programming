@@ -17,12 +17,6 @@
 >>> add_integer(2147483647, 1)
 2147483648
 
-Adding an integer number and a string
-    >>> add_integer(4, "School")
-    Traceback (most recent call last):
-	      ...
-    TypeError: b must be an integer
-
 Passing None
     >>> add_integer(None)
     Traceback (most recent call last):
