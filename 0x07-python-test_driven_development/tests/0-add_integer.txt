@@ -17,12 +17,6 @@
 >>> add_integer(2147483647, 1)
 2147483648
 
-# Test case: Testing for potential overflow
->>> add_integer(2147483647, 100000)
-Traceback (most recent call last):
-    ...
-OverflowError: cannot convert float infinity to integer
-
 #Case Overflow:
 >>> add_integer(float('inf'), 0)
 Traceback (most recent call last):
