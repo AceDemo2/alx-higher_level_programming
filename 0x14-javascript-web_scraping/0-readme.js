@@ -9,5 +9,5 @@ fs.readFile(process.argv[2], 'utf-8', (err, data) => {
     return;
   }
   else
-  console.log(data)
+    console.log(data)
 });
