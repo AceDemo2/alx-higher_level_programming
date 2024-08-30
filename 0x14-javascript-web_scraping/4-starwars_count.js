@@ -6,6 +6,7 @@ const api = 'https://swapi-api.alx-tools.com/api/films/';
 rq(api, (err, resp, body) => {
   if (err) {
     console.log(err);
+    return;
   }
   const data = JSON.parse(body);
   let count = 0;
