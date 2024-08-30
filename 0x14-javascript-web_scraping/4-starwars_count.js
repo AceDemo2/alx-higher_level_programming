@@ -9,12 +9,13 @@ rq(api, (err, resp, body) => {
   }
   const data = JSON.parse(body);
   let count = 0;
-  let reslen = data.result.length
+  const reslen = data.results.length;
   for (let i = 0; i < reslen; i++) {
-    let 
-    for (let j = 0; j < result[j]; j++) {
-        let charlen = result[j].character.length
-	for (let k = 0; k < charlen; k++) {
-  forEach
-	console.log(data.title);
+    const charlen = data.result[i].characters.length;
+    for (let j = 0; j < charlen; j++) {
+      const charsplit = characters[j].split('/')[5];
+      if (charsplit === '18') { count += 1; }
+    }
+  }
+  console.log(count);
 });
