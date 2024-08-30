@@ -13,7 +13,7 @@ rq(api, (err, resp, body) => {
   for (let i = 0; i < reslen; i++) {
     const charlen = data.results[i].characters.length;
     for (let j = 0; j < charlen; j++) {
-      if (data.results[i].characters[j].include('/18/') { count += 1; }
+      if (data.results[i].characters[j].includes('/18/') { count += 1; }
     }
   }
   console.log(count);
