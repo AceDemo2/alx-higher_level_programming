@@ -1,5 +1,5 @@
 #!/usr/bin/node
-//store content
+// store content
 
 const fs = require('fs');
 const rq = require('request');
