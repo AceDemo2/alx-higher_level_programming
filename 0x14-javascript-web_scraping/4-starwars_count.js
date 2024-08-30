@@ -1,27 +1,22 @@
 #!/usr/bin/node
-// starwars_title.js
 
-const rq = require('request');
-const api = 'https://swapi-api.alx-tools.com/api/films/';
-rq(api, (err, resp, body) => {
-  if (err) {
-    console.log(err);
-    return;
+const request = require('request');
+const url = process.argv[2];
+const characterId = '18';
+let count = 0;
+
+request.get(url, (error, response, body) => {
+  if (error) {
+    console.log(error);
+  } else {
+    const data = JSON.parse(body);
+    data.results.forEach((film) => {
+      film.characters.forEach((character) => {
+        if (character.includes(characterId)) {
+          count += 1;
+        }
+      });
+    });
+    console.log(count);
   }
-  const data = JSON.parse(body);
-  let count = 0;
-  const numberFilm = data.results.length;
-
-  for (let i = 0; i < numberFilm; i++) {
-    const numberCharacters = data.results[i].characters.length;
-
-    for (let j = 0; j < numberCharacters; j++) {
-      const filmForCharacter = data.results[i].characters[j];
-
-      if (filmForCharacter.includes('18') === true) {
-        count += 1;
-      }
-    }
-  }
-  console.log(count);
 });
