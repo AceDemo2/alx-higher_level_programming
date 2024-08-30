@@ -11,9 +11,9 @@ rq(api, (err, resp, body) => {
   let count = 0;
   const reslen = data.results.length;
   for (let i = 0; i < reslen; i++) {
-    const charlen = data.result[i].characters.length;
+    const charlen = data.results[i].characters.length;
     for (let j = 0; j < charlen; j++) {
-      const charsplit = characters[j].split('/')[5];
+      const charsplit = data.results[i].characters[j].split('/')[5];
       if (charsplit === '18') { count += 1; }
     }
   }
