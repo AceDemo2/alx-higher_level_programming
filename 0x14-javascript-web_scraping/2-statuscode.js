@@ -2,7 +2,7 @@
 // get
 
 const rq = require('request');
-rq(process.argv[2], (err resp) => {
+rq(process.argv[2], (err, resp) => {
   if (err) {
     console.log(err);
   }
