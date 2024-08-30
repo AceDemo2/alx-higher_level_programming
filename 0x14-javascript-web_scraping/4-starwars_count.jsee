@@ -6,6 +6,7 @@ const api = 'https://swapi-api.alx-tools.com/api/films/';
 rq(api, (err, resp, body) => {
   if (err) {
     console.log(err);
+    return;
   }
   const data = JSON.parse(body);
   let count = 0;
@@ -13,8 +14,7 @@ rq(api, (err, resp, body) => {
   for (let i = 0; i < reslen; i++) {
     const charlen = data.results[i].characters.length;
     for (let j = 0; j < charlen; j++) {
-      const charsplit = data.results[i].characters[j].split('/')[5];
-      if (charsplit === '18') { count += 1; }
+      if (data.results[i].characters[j].includes('18') === true) { count++; }
     }
   }
   console.log(count);

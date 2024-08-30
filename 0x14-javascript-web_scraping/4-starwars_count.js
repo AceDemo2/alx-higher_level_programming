@@ -10,11 +10,17 @@ rq(api, (err, resp, body) => {
   }
   const data = JSON.parse(body);
   let count = 0;
-  const reslen = data.results.length;
-  for (let i = 0; i < reslen; i++) {
-    const charlen = data.results[i].characters.length;
-    for (let j = 0; j < charlen; j++) {
-      if (data.results[i].characters[j].includes('18') === true) { count++; }
+  const numberFilm = data.results.length;
+
+  for (let i = 0; i < numberFilm; i++) {
+    const numberCharacters = data.results[i].characters.length;
+
+    for (let j = 0; j < numberCharacters; j++) {
+      const filmForCharacter = data.results[i].characters[j];
+
+      if (filmForCharacter.includes('18') === true) {
+        count += 1;
+      }
     }
   }
   console.log(count);
