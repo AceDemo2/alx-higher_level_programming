@@ -2,7 +2,7 @@
 // starwars_title.js
 
 const rq = require('request');
-const api = 'https://swapi-api.alx-tools.com/api/films/';
+const api = process.argv[2];
 rq(api, (err, resp, body) => {
   if (err) {
     console.log(err);
