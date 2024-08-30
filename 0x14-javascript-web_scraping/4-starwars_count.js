@@ -1,24 +1,24 @@
 #!/usr/bin/node
-const axios = require('axios').default;
-axios
-  .get(process.argv[2])
-  .then(function (response) {
+
+const request = require('request');
+const url = process.argv[2];
+
+request(url, function (err, response, body) {
+  if (err) {
+    console.log(err);
+  } else if (response.statusCode === 200) {
+    const films = JSON.parse(body).results;
     let count = 0;
-    const numberFilm = response.data.results.length;
-
-    for (let i = 0; i < numberFilm; i++) {
-      const numberCharacters = response.data.results[i].characters.length;
-
-      for (let j = 0; j < numberCharacters; j++) {
-        const filmForCharacter = response.data.results[i].characters[j];
-
-        if (filmForCharacter.includes('18') === true) {
-          count += 1;
+    for (const filmIndex in films) {
+      const filmChars = films[filmIndex].characters;
+      for (const charIndex in filmChars) {
+        if (filmChars[charIndex].includes('18')) {
+          count++;
         }
       }
     }
     console.log(count);
-  })
-  .catch(function (error) {
-    console.log('An error has occurred - ' + error);
-  });
+  } else {
+    console.log('An error occured. Status code: ' + response.statusCode);
+  }
+});
