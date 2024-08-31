@@ -12,17 +12,17 @@ rq(api, (err, resp, body) => {
 
   print(data, 0);
 });
-function print (body, ind) {
-  if (ind === body.length) {
+function print (data, ind) {
+  if (ind === data.length) {
     return;
   }
-  rq(body[ind], (err, resp, body) => {
+  rq(data[ind], (err, resp, body) => {
     if (err) {
       console.log(err);
       return;
     }
     const name = JSON.parse(body).name;
     console.log(name);
-    print(body, ind + 1);
+    print(data, ind + 1);
   });
 }
